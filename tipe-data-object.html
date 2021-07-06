@@ -7,28 +7,37 @@
 <body>
 <script>
 
+    // const person = {};
+    // person["nama"] = "Kiki";
+    // person["alamat"] = "Jerman";
+    // person["umur"] = 30;
+
+    // console.table(person);
+
+    // delete person["umur"];
+
+    // console.table(person);
+
     const orang = {
         namaLengkap : "Burhan",
         "nama lengkap" : "Eko Kurniawan",
         alamat: "Indonesia",
         umur: 30
     };
+    console.table(orang);
+    
 
-    // ubah property / attribute
-    // person["nama"] = "Eko Kurniawan";
-    // person["alamat"] = "Indonesia";
-    // person["umur"] = 30;
     console.info(`Nama Tambahan : ${orang.namaLengkap}`);
-    console.info(`Nama : ${orang["nama lengkap"]}`);
+    console.info(`Nama : ${orang["nama lengkap"]}`); // dua suku kata
     console.info(`Alamat : ${orang.alamat}`);
     console.info(`Umur : ${orang.umur}`);
 
-    console.table(orang);
+    // console.table(orang);
 
-    delete orang[["nama lengkap"]];
-    delete orang["umur"];
+    // delete orang[["nama lengkap"]];
+    // delete orang["umur"];
 
-    console.table(orang);
+    // console.table(orang);
 
 </script>
 </body>
