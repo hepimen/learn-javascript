@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator typeof</title>
+</head>
+<body>
+<script>
+
+    let data = "kiki";
+
+    const typeData = typeof data;
+    document.writeln(`<p>${typeData}</p>`);
+
+
+    let data2 = null;
+
+    if (typeof data2 === "number"){
+        alert("Type data : Number");
+    } else if (typeof data2 ==="string" ) {
+        alert("Type data : String");
+    } else if (typeof data2 ==="boolean" ) {
+        alert("Type data : Boolean");
+    } else if (typeof data2 ==="object" ) {
+        alert("Type data : Object"); 
+    } else {
+        alert("Kode anda eror")
+    }
+</script>
+</body>
+</html>

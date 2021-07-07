@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Logika di Non Boolean</title>
+</head>
+<body>
+<script>
+
+    // operator OR membaca kiri ke kanan || mengambil nilai truthy yg pertama || jika tidak ada yg diambil yg terakhir || falsy tidak aakan diambil yg diambil yg trutjy
+    console.info("Hello" || ""); // Hello
+    console.info("" || []); // array
+    console.info("0" || "NOL"); //0
+    console.info(0 || "NOL"); //NOL
+    console.info(null || "NULL"); // NULL
+    console.info(undefined || "UNDEFINED"); // UNDEFINED
+    console.info(0 || false); // false
+
+    // jika dua2nya falsy yg diambil yg terakhir
+
+    const person = {
+        firstName: "",
+        lastName: "Khannedy"
+    };
+
+    const name = person.firstName || person.lastName;
+    console.info(name);
+
+    // operator OR membaca kiri ke kanan || mengambil nilai pertama yg falsy || // jika tak ada satupun falsy yg diambil yg terakhir
+
+    console.info("HELLO" && ''); // kosong
+    console.info("" && []); // kosong
+    console.info("0" && "NOL"); // NOL
+
+</script>
+</body>
+</html>
