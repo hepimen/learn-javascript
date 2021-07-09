@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>With Statement</title>
+</head>
+<body>
+<script>
+
+     // tidak menggunakan with statement
+    const person = {
+        firstName: "Eko",
+        middleName: "Kurniawan",
+        lastName: "Khannedy"
+    };
+
+    console.info(person.firstName);
+    console.info(person.middleName);
+    console.info(person.lastName);
+
+    const firstName = "Budi"; //tidak akan di akses oleh with
+    const lastName = "Nugraha";
+
+
+    // menggunakan  with statement
+    with (person) {
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Of</title>
+</head>
+<body>
+<script>
+
+    // untuk isi value dari property dan index nya
+    
+    const names = ["Eko", "Kurniawan", "Khannedy"];
+    for(const name of names){
+        document.writeln(`<p>${name}</p>`);
+    }
+
+    const fullName = "Eko Kurniawan Khannedy";
+    for(const character of fullName){
+        document.writeln(`<p>${character}</p>`);
+    }
+
+
+    // contoh yg tidak bisa karena tidak iterable
+
+    // const person = {
+    //     firstName: "Eko",
+    //     lastName: "Khannedy"
+    // };
+    // for(const name of person){
+    //     document.writeln(`<p>${name}</p>`);
+    // }
+
+</script>
+</body>
+</html>
