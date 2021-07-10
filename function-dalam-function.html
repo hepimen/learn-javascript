@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function dalam Function</title>
+</head>
+<body>
+<script>
+
+    // function dalam function = inner function
+
+    function outer(){
+
+        function inner(){
+            console.info("Inner");
+        }
+
+        inner();
+        inner();
+
+    }
+
+    outer();
+    // inner(); tidak akan jalan jika diluar function outer
+
+</script>
+</body>
+</html>
