@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Masalah Variable var</title>
+</head>
+<body>
+<script>
+
+    // var tidak memiliki block scope
+    // var tidak bisa terprediksi
+
+
+    // let
+
+    // global scope
+    // let i = 20;
+
+    // for (let i = 0; i < 10; i++) {
+    //     // local scope
+    //     console.info(`Local ${i}`);
+    // }
+
+    // console.info(`Global ${i}`); // result // Global 20
+
+    // global scope
+    var i = 20;
+
+    for (var i = 0; i < 10; i++) {
+        // local scope
+        console.info(`Local ${i}`);
+    }
+
+    // var diatas seakan2 var i 20 nya overwrite ke 0
+
+    console.info(`Global ${i}`); // result // Global 10
+
+</script>
+</body>
+</html>

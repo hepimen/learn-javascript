@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Method Arrow Function</title>
+</head>
+<body>
+<script>
+
+    // anonymous function
+    // const person = {
+    //     name: "Eko",
+    //     sayHello: function (name){
+    //         console.info(this);
+    //         console.info(`Hello ${name} My Name is ${this.name}`);
+    //     }
+    // };
+
+    // arrow function
+    const person = {
+        name: "Eko",
+        sayHello: (name) => {
+            console.info(this);
+            console.info(`Hello ${name}, My Name is ${this.name}`);
+        }
+    };
+
+    // perbedaan penggunanaan this di arrow function dan anonymous function untuk this di arrow function mengacu ke window, tidak seperti di anonyFunction yg mengacu ke property nya
+
+    person.sayHello("Budi");
+
+</script>
+</body>
+</html>

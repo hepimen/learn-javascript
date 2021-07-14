@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object Method</title>
+</head>
+<body>
+<script>    
+
+    // function yg ada dalam method 
+    // #cara 1
+    // function sayHello(name){
+    //     alert(`Hello ${name}`);
+    // }
+
+    // const person = {
+    //     name: "Eko",
+    //     sayHello: sayHello
+    // };
+
+    // biar lebih cepet 'anonymous function aja' hasil sama aja seperti diatasnya
+    // #cara 2
+    // const person = {
+    //     name: "Eko",
+    //     sayHello: function (name){
+    //         alert(`Hello ${name}`);
+    //     }
+    // };
+
+
+    // #cara 3
+    const person = {
+        name: "Eko"
+    };
+
+    person.sayHello = function (name){
+        alert(`Hello ${name}`);
+    }
+
+    person.sayHello('Budi');
+
+</script>
+</body>
+</html>

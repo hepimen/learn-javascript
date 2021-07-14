@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Arrow</title>
+</head>
+<body>
+<script>
+
+    // const sayHello = (name) => {
+    //     const say = `Hello ${name}`;
+    //     console.info(say);
+    // }
+
+    // const sayHello = (name) => console.info(`Hello ${name}`);
+
+    // Arrow function tanpa block hanya dilakukan jika sederhana
+    // parameter tanpa tanda kurung di perbolehkan jika hanya ada 1 parameter (contoh paramerter "name"), kosong wajib menggunakan -> ()
+    const sayHello = name => console.info(`Hello ${name}`);
+
+    sayHello("Eko");
+
+    // const sum = (first, second) => {
+    //     return first + second;
+    // }
+
+    // arrow function return value sederhana (degn block function)
+    // const sum = (first, second) => {
+    //     return first + second;
+    // }
+    
+    // arrow function return value sederhana (tanpa block function)
+    const sum = (first, second) => first + second;
+
+    console.info(sum(100, 100));
+
+    function giveMeName(callback){
+        callback("Eko");
+    }
+
+    // Anonymous Function
+    // giveMeName(function (name) {
+    //     console.info(`Hello ${name}`);
+    // })
+
+    // Arrow Function
+    giveMeName(name => console.info(`Hello ${name}`));
+
+</script>
+</body>
+</html>
